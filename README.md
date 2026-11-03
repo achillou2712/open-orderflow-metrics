@@ -17,3 +17,4 @@ from microstructure import compute_volume_profile, compute_cvd_approximation
 df = pd.read_csv("ohlcv_data.csv")
 profile = compute_volume_profile(df, bins=50, value_area_pct=0.70)
 print(f"POC: {profile.poc} | VAH: {profile.vah} | VAL: {profile.val}")
+
